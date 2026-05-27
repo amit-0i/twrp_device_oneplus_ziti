@@ -13,17 +13,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from lahaina device
-$(call inherit-product, device/qualcomm/lahaina/device.mk)
+$(call inherit-product, device/oneplus/ziti/device.mk)
 
-PRODUCT_DEVICE := lahaina
-PRODUCT_NAME := omni_lahaina
-PRODUCT_BRAND := qti
-PRODUCT_MODEL := Lahaina for arm64
-PRODUCT_MANUFACTURER := qualcomm
+PRODUCT_DEVICE := ziti
+PRODUCT_NAME := twrp_ziti
+PRODUCT_BRAND := OnePlus
+PRODUCT_MODEL := CPH2569
+PRODUCT_MANUFACTURER := OnePlus
 
 PRODUCT_GMS_CLIENTID_BASE := android-qualcomm
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="lahaina-user 12 UKQ1.230924.001 1769002427728 release-keys"
+    PRIVATE_BUILD_DESC="CPH2569-user 15 AP3A.240617.008 T.R4T2.1e3a2ac-3e2a_1a86f release-keys"
 
-BUILD_FINGERPRINT := qti/lahaina/lahaina:12/UKQ1.230924.001/1769002427728:user/release-keys
+BUILD_FINGERPRINT := OnePlus/CPH2569/OP5953L1:15/AP3A.240617.008/T.R4T2.1e3a2ac-3e2a_1a86f:user/release-keys
